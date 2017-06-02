@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tradução WHMCS versão 7 para Português do Brasil - README</title>
+
+    <style>
+
+        /* Space out content a bit */
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        /* Everything but the jumbotron gets side spacing for mobile first views */
+        .header,
+        .marketing,
+        .footer {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /* Custom page header */
+        .header {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        /* Make the masthead heading the same height as the navigation */
+        .header h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 40px;
+            padding-bottom: 19px;
+        }
+
+        /* Custom page footer */
+        .footer {
+            padding-top: 19px;
+            color: #777;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        /* Customize container */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 730px;
+            }
+        }
+
+        .container-narrow > hr {
+            margin: 30px 0;
+        }
+
+        /* Main marketing message and sign up button */
+        .jumbotron {
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .jumbotron .btn {
+            font-size: 21px;
+            padding: 14px 24px;
+        }
+
+        /* Supporting marketing content */
+        .marketing {
+            margin: 40px 0;
+        }
+
+        .marketing p + h4 {
+            margin-top: 28px;
+        }
+
+        /* Responsive: Portrait tablets and up */
+        @media screen and (min-width: 768px) {
+            /* Remove the padding we set earlier */
+            .header,
+            .marketing,
+            .footer {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            /* Space out the masthead */
+            .header {
+                margin-bottom: 30px;
+            }
+
+            /* Remove the bottom border on the jumbotron for visual effect */
+            .jumbotron {
+                border-bottom: 0;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+            font-size: 13px;
+            line-height: 18px;
+            color: #737373;
+            background-color: white;
+            margin: 10px 13px 10px 13px;
+        }
+
+        table {
+            margin: 10px 0 15px 0;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #ddd;
+            padding: 3px 10px;
+        }
+
+        th {
+            padding: 5px 10px;
+        }
+
+        a {
+            color: #0069d6;
+        }
+
+        a:hover {
+            color: #0050a3;
+            text-decoration: none;
+        }
+
+        a img {
+            border: none;
+        }
+
+        p {
+            margin-bottom: 9px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #404040;
+            line-height: 36px;
+        }
+
+        h1 {
+            margin-bottom: 18px;
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        h6 {
+            font-size: 13px;
+        }
+
+        hr {
+            margin: 0 0 19px;
+            border: 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        blockquote {
+            padding: 13px 13px 21px 15px;
+            margin-bottom: 18px;
+            font-family: georgia, serif;
+            font-style: italic;
+        }
+
+        blockquote:before {
+            content: "\201C";
+            font-size: 40px;
+            margin-left: -10px;
+            font-family: georgia, serif;
+            color: #eee;
+        }
+
+        blockquote p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 18px;
+            margin-bottom: 0;
+            font-style: italic;
+        }
+
+        code, pre {
+            font-family: Monaco, Andale Mono, Courier New, monospace;
+        }
+
+        code {
+            background-color: #fee9cc;
+            color: rgba(0, 0, 0, 0.75);
+            padding: 1px 3px;
+            font-size: 12px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        pre {
+            display: block;
+            padding: 14px;
+            margin: 0 0 18px;
+            line-height: 16px;
+            font-size: 11px;
+            border: 1px solid #d9d9d9;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        pre code {
+            color: #737373;
+            font-size: 11px;
+            padding: 0;
+        }
+
+        sup {
+            font-size: 0.83em;
+            vertical-align: super;
+            line-height: 0;
+        }
+
+        * {
+            -webkit-print-color-adjust: exact;
+        }
+
+        @media screen and (min-width: 914px) {
+            body {
+                width: 854px;
+                margin: 10px auto;
+            }
+        }
+
+        @media print {
+            body, code, pre code, h1, h2, h3, h4, h5, h6 {
+                color: black;
+            }
+
+            table, pre {
+                page-break-inside: avoid;
+            }
+        }
+
+        img[alt=apikey_instruction] {
+            width: 680px;
+        }
+
+        code {
+            background-color: #F5F5F5;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        /* Space out content a bit */
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        /* Everything but the jumbotron gets side spacing for mobile first views */
+        .header,
+        .marketing,
+        .footer {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /* Custom page header */
+        .header {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        /* Make the masthead heading the same height as the navigation */
+        .header h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 40px;
+            padding-bottom: 19px;
+        }
+
+        /* Custom page footer */
+        .footer {
+            padding-top: 19px;
+            color: #777;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        /* Customize container */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 730px;
+            }
+        }
+
+        .container-narrow > hr {
+            margin: 30px 0;
+        }
+
+        /* Main marketing message and sign up button */
+        .jumbotron {
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .jumbotron .btn {
+            font-size: 21px;
+            padding: 14px 24px;
+        }
+
+        /* Supporting marketing content */
+        .marketing {
+            margin: 40px 0;
+        }
+
+        .marketing p + h4 {
+            margin-top: 28px;
+        }
+
+        /* Responsive: Portrait tablets and up */
+        @media screen and (min-width: 768px) {
+            /* Remove the padding we set earlier */
+            .header,
+            .marketing,
+            .footer {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            /* Space out the masthead */
+            .header {
+                margin-bottom: 30px;
+            }
+
+            /* Remove the bottom border on the jumbotron for visual effect */
+            .jumbotron {
+                border-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">
+        <h3 class="text-muted">
+            <img
+                src="data:image/gif;base64,R0lGODlhfQAoAPcAACyHw5PA3id2qoaz0WFhYf3+/kmNupS71NTm8cbd7EaVyXumwo+82rbN3YqKis/Pz+71+jyFtcvh8J6+01ZWVmuaubS0tHWt0qHK5bKystra2sPa6djY2J6entHh7Mzi8TV5psDW5erq6luhz+Lu9dbW1urx9dTU1EmYzG6r08LCwnl5eWtra22my53H4rrS4kZGRil4rFGVwwNShvD2+ujo6HFxcUqGrbrX6RRjl9nn8SBpmnmjvwdWirHN4MbGxl6TtqHH3+Dr876+vpiYmBZro06Xxy99smRkZEKNvhxrnm9vb5bE4nZ2dsTExLq6uoODg63P5l5eXs/k8Uyazzs7O0pKSgVfm05OThx2sj4+PlJSUlpaWkJCQiB6tkSTxwlYjQtajpOTkzuKvhNuqqysrBJhldLS0sXc6z2MwaSkpPPz89PT0+bm5ghini6Cu6qqqgtmohdyrmdnZ6ampg9qpg1ckefn5yR+uvT09NHR0UKRxaioqDmIvN/r8iRzpxdmmvX19Sx7r4CAgECPw6CgoKKiotDQ0Im21BBfk5ubm3R0dPb29hlonfn7/I6OjiiCvs3NzZGRkYCty66ursHY53SnyWxsbDaFuVibyCFwpJG+3KLE2luey8ng7+Xx+IOwzh5tojGLx4262DSDt7a2tpjF45XC4IKvzcjf7qrL4jKGvnOlxzGAtM/g7MTb6j+Ow12bxZq/2K/R6SFtoDyLvzF+sb7S4E6Sv36ow6rP6FWYxX6w0VWezZ/I5IO32E2c0Cl2qeDg4EiKtafD1YW42abI33CfvvP3+ZC30rnP3vr8/Z3F39fo89/f37zR3yhwn5W2zODs8+Pu9oKrxt7o74mux0iQv4u+34u41o693DiHvDyArbrV58DX5r/b7TuIu+zs7D+Jug1ajff6/WegxWyhxJaWlmyfwXSoyqXE2KjH3IaGhlGSvczc6MfZ5mam0Gmm0BlikkuYy5LB4IWuybCwsEuUxU6TwNzo8Dd/r9Pk8PD1+R5zrJnB3P///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOkY4N0YxMTc0MDcyMDY4MTE4QTZEQ0Y2OUNBQTU0NTZCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjEwNTk5NUU5MzNFQTExRTM5RTlGRUMxOUMzRTg5Q0RGIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjEwNTk5NUU4MzNFQTExRTM5RTlGRUMxOUMzRTg5Q0RGIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUuMSBNYWNpbnRvc2giPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1NDc0MjI2QjExMjA2ODExOEE2RENGNjlDQUE1NDU2QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGODdGMTE3NDA3MjA2ODExOEE2RENGNjlDQUE1NDU2QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAAAAAAALAAAAAB9ACgAAAj/AP8JHEiwoMGDCBMqXMiwocOHECNKnEixokWJNIBhuMixo0eJEApOobLxo8mTJ8kxoaKL4CySKGPKrEgPhc1vA7Gh8DWzp0+GqRQInSdhCoYRClz8XMp0YIFeQqNGVdq0qs9TX7JqzUrVqleONAo4LbanbFl42qI0+8rWYgojmxAU+EWoLiFtJNrqrYgjjd809/4ambK38ER/YxIrHiNjmsFPHwpCRhluiIUfjPYy0pD5YZA+oEEnWWvQlKjIA02j9ghnjus5Nn7o1TDHQsRu4DDpDoLQFAAJBH0D95gByYofHDIsgaKXA5IMEnmRIoVvGcJTvwliHz4RQAqClwiI/xgoItBFDgSeUERvT+K1Vq38JQwAyRNB+vYpQhoxkIMUdif5R8l6UgwIkTdHJKhDQpvgkQpBDT4o0DQXrIKHEVEQhAMseMCCwz84dILHKp3E808JXJSRUCBlLMHFEmWYN5Awj3DBBREylrHCi1Co+I8IREDxyEAq7IgEEeMJhKKPC22QTjuCRCmILWIhxIAXFzCgJQOZeJGAQAi84UUtXWI54RtvZILmP8x44aYXb5xIARwI5dEEBQQMQgAFTeQhkAh7DnInC346QMGhFDjwTx574inQOYcOwgKezig5Z0OyxKDpphEoNEoWoIYK6pf/bJOFKgLRcM2p/ySQxSj/TP+DwEBZ7DLQCVvwgZAYW4gxEK++/sOrbcJuQSyuugpkwRaKCjTEFov4+c+zcwiELKYCZKttpwllI4c/aISLRgtyoPEPGnK0QBAJcsjwzz5yJGEuQe0OxAYWdCCEBRIFIYGFQCv8K9C9+f5D8EB0YMHGQAEnKZAkChuMb0PemDPMHxj/EUyVByFCxisEeQyyx8YUJA4ZArVABhmx0DAQGbgMdIYVahw085AEEWHFGf80YYXMNAs0c80CqbHzQFYQUNAPQQ8d0QuaRL0gQgPUsQFBVV9tTB0DFNTPEQNtEEEd3P5ThwED6QHDIgfVsHZBg8BQwz+LwJA2DIYIpHbeAhn/AoMeA0lhN0GUwKDe3hLpE0ooByQ0QBxXD/T41dLEEQM/Ax0QRzkFGRCHBwLFgfZAWGCxxkB3OCEQF11oMJAGXXAhkA1dDHRIF4UIdHvuAhXSxSEDOdAFk2uwfsc/u0uEjhJKcMNxQaC4UQlB0U//jyVu6MNJJdgXIcQ/HgjAiQ8CuPH9P+Vb0vg/HWhBQCkPdGCFFseroIUVcDwAx/wqCLSEFgN5gBY6IJA73K8D/WvfA1A3PzE8oBQE0EKwBEgAOj3kBbRohAbXZxBUXMEbBPEgCAXCiiuY8Ap/AN0/fHDCK7BiID4oggkHIokq2LAKMCDWPywAgxvmcCCXqEIA/6tAQIF0wIaXYF8VFvg6CtywCpIgCAFs+BB1NAIQWASEEvJxED+EoCBeBGMyJuEDME5iEq4oCD9CkMaBtIEPirDA6QiyBgvEcY4CaYPrBhKJNhCkDX38xxoicRAVKIIPfiyIBvbIkHrk4JGQzAEIzmeYSjpkHWbIpBl2oEloqNCSoFTIDXZwjHc4AgiJSGUOFmCCULrSICZwxEBOaYda1vIG1JiAO17JS4IsIAzADCYwc9HLXhZgB2BIpjKTScxivlIZPYjmOBrwjAXIowcLcOYrKxDNHhBjINzMpjZDiYwKzMAaBInGDHgwzldWoyC3WGc7tWkCec7znvjMpz47EgEQADs=">
+            WHMCS Lang
+        </h3>
+    </div>
+
+    <div class="row marketing">
+        <p><a name="top"></a></p>
+
+        <h1>Tradução WHMCS versão 7 para Português do Brasil</h1>
+		<p>Tradução Livre do WHMCS versão 7 para Português do Brasil.
+		Baseado no arquivo Português Brasil original do WHMCS versão 7.</p>
+
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#ii">Instruções para a Instalação</a></li>
+            <li><a href="#cl">Changelog</a></li>
+            <li><a href="#ctt">Contato</a></li>
+        </ul>
+        <hr>
+        <h2><a name="ii"></a>Instruções para a Instalação</h2>
+        <ol>
+            <li>Efetue o donwload da Release correspondente a sua versão do<code>WHMCS</code></li>
+			<li>Descompacte o arquivo em seu computador</li>
+            <li>Utilizando seu programa de FTP preferido, realize o upload da pasta <code>WHMCS</code> no seu diretorio de instalação "Obs.: substitua os arquivos atuais"</li>
+			<li><strong>Para a Área do Cliente</strong></li>
+            <li>Acesse sua area de admin do WHMCS</li>
+            <li>se o menu de navegação para ir para “Opções &rarr; Configurações Gerais &rarr; Localização”</li>
+            <li>No campo "Idioma Padrão, selecione Portuguese-br e clique em Salvar Alterações"</li>
+			<li><strong>Para a Área do Administrador</strong></li>
+            <li>Utilize o menu de navegação para ir para "Minha Conta"</li>
+            <li>No campo "Idioma, selecione 'Portugues', insira sua senha em 'Confirmar Senha' e clique em Salvar Alterações.</li>
+        </ol>
+        <p><a href="#top">Back to top</a></p>
+        <hr>
+        <h2><a name="cl"></a> Changelog</h2>
+
+        <p><strong>02/06/2017</strong></p>
+        <ul>
+            <li>Teste de compatibilidade efetuado na versão 7.2.2</li>
+            <li>Traduções incorretas corrigidas</li>
+        </ul>
+        <p><a href="#top">Back to top</a></p>
+        <hr>
+        <h2><a name="ctt"></a> Contato</h2>
+        <p>Caso tenha alguma dúvida com a instalação ou encontre algum erro, deixe seu comentário ou me envie uma mensagem no PV.</p>
+
+        <p><a href="#top">Back to top</a></p>
+    </div>
+
+    <div class="footer">
+        <p>&nbsp;</p>
+    </div>
+
+</div>
+</body>
+</html>
