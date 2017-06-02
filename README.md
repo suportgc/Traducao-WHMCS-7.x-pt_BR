@@ -1,6 +1,5 @@
 # Tradução WHMCS versão 7 para Português do Brasil
-Tradução Livre do WHMCS versão 7 para Português do Brasil.<br>
-Baseado no arquivo Português Brasil original do WHMCS versão 7.
+Tradução Livre do WHMCS versão 7 para Português do Brasil, baseada no arquivo Português Brasil original do WHMCS versão 7.
 
 ### Índice
 - Instruções para a Instalação
@@ -13,11 +12,11 @@ Baseado no arquivo Português Brasil original do WHMCS versão 7.
 3. Utilizando seu programa de FTP preferido, realize o upload da pasta WHMCS no seu diretorio de instalação (Obs.: substitua os arquivos atuais)
 - Para a Área do Cliente
 4. Acesse sua area de admin do WHMCS
-5. Use the navigation menu to go to “Setup -> Products/Services -> Domain Registrars”
-6. WHMCS detected the HostControl registrar module
+5. Utilize o menu de navegação para ir para “Opções -> Configurações Gerais -> Localização”
+6. No campo "Idioma Padrão, selecione 'Portuguese-br' e clique em Salvar Alterações"
 - Para a Área do Administrador
 7. Utilize o menu de navegação para ir para "Minha Conta"
-8. No campo "Idioma, selecione 'Portugues', insira sua senha em 'Confirmar Senha' e clique em Salvar Alterações.
+8. No campo "Idioma, selecione 'Portugues', insira sua senha em 'Confirmar Senha' e clique em Salvar Alterações"
 
 ### Changelog
 ###### 02/06/2017
