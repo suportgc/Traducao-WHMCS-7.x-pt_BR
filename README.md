@@ -20,8 +20,8 @@ Tradução Livre do WHMCS versão 7 para Português do Brasil, baseada no arquiv
 
 ### Changelog
 ###### 18/07/2017
- - Update para a versao 7.2.3
- - Teste de compatibilidade efetuado na versao 7.2.3
+ - Update para a versão 7.2.3
+ - Teste de compatibilidade efetuado na versão 7.2.3
  - Traduções incorretas corrigidas
  - Adicionadas novas traduções
 
