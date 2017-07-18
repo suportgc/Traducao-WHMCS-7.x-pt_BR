@@ -13,12 +13,12 @@ $_ADMINLANG['global']['page'] = "Página";
 $_ADMINLANG['global']['of'] = "de";
 $_ADMINLANG['global']['jumppage'] = "Saltar para a Página";
 $_ADMINLANG['global']['go'] = "Ir";
-$_ADMINLANG['global']['any'] = "Qualquer";
+$_ADMINLANG['global']['any'] = "Todos";
 $_ADMINLANG['global']['withselected'] = "Com os Selecionados";
 $_ADMINLANG['global']['previouspage'] = "Página Anterior";
 $_ADMINLANG['global']['nextpage'] = "Próxima Página";
-$_ADMINLANG['global']['norecordsfound'] = "Nenhum Registro Foi Encontrado";
-$_ADMINLANG['global']['welcomeback'] = "Bem vindo de volta";
+$_ADMINLANG['global']['norecordsfound'] = "Nenhum resultado";
+$_ADMINLANG['global']['welcomeback'] = "Bem-vindo(a)";
 $_ADMINLANG['global']['clientarea'] = "Área do Cliente";
 $_ADMINLANG['global']['mynotes'] = "Minhas Notas";
 $_ADMINLANG['global']['myaccount'] = "Minha Conta";
@@ -137,7 +137,7 @@ $_ADMINLANG['global']['learnMore'] = "Saiba Mais";
 # Home
 $_ADMINLANG['home']['title'] = "Início";
 $_ADMINLANG['home']['quicksummary'] = "Resumo Rápido";
-$_ADMINLANG['home']['maintenancemode'] = "Modo de Manutenção está Ativo. Lembre-se de desativá-lo quando finalizar a mesma em <a href=\"configgeneral.php\">Configurações Gerais</a>";
+$_ADMINLANG['home']['maintenancemode'] = "Modo de Manutenção Ativo. Lembre-se de desativá-lo quando finalizar. Desative em <a href=\"configgeneral.php\">Configurações Gerais</a>";
 $_ADMINLANG['home']['recentclientactivity'] = "Atividade Recente dos Clientes";
 $_ADMINLANG['home']['recentadminactivity'] = "Atividade Recente dos Administradores";
 $_ADMINLANG['home']['recentactivity'] = "Atividade Recente";
@@ -442,7 +442,6 @@ $_ADMINLANG['modulebuttons']['transfer'] = "Transferir";
 # Addons
 $_ADMINLANG['addons']['title'] = "Complementos";
 $_ADMINLANG['addons']['relatedservice'] = "Produto/Serviço Relacionado";
-$_ADMINLANG['addons']['areyousuredelete'] = "Você tem certeza que quer apagar esse addon?";
 $_ADMINLANG['addons']['regdate'] = "Data do Registro";
 $_ADMINLANG['addons']['name'] = "Nome";
 $_ADMINLANG['addons']['addnew'] = "Adicionar Novo Addon";
@@ -520,7 +519,7 @@ $_ADMINLANG['domains']['ifreq'] = "Se Obrigatório";
 $_ADMINLANG['domains']['sendregisterconfirm'] = "Marque essa caixa para Enviar Confirmação de Registro quando Concluído com Sucesso";
 $_ADMINLANG['domains']['regsuccess'] = "Domínio Registrado com Sucesso";
 $_ADMINLANG['domains']['transuccess'] = "Transferência de Domínio Iniciada com Sucesso";
-$_ADMINLANG['domains']['actionquestion'] = "Tem certeza que quer %s esse domínio?"; #%s É ação ou transferência
+$_ADMINLANG['domains']['actionquestion'] = "Tem certeza que quer %s esse domínio?";
 $_ADMINLANG['domains']['nodomains'] = "Nenhum Domínio";
 $_ADMINLANG['domains']['nodomainsinfo'] = "Nenhum domínio encontrado para esse usuário.";
 $_ADMINLANG['domains']['domainidnotfound'] = "ID do Domínio Não Encontrado";
@@ -977,7 +976,7 @@ $_ADMINLANG['support']['awaitingreply'] = "Aguardando Resposta";
 $_ADMINLANG['support']['announcesuredel'] = "Tem certeza que quer apagar esse anúncio?";
 $_ADMINLANG['support']['announceadd'] = "Inserir Novo Anúncio";
 $_ADMINLANG['support']['announcepublished'] = "Publicar";
-$_ADMINLANG['support']['announcement'] = "Anúncio";
+$_ADMINLANG['support']['announcement'] = "Anúncios";
 $_ADMINLANG['support']['announcemultiling'] = "Traduções Multilíngues";
 $_ADMINLANG['support']['supportoverview'] = "Visão geral do suporte";
 $_ADMINLANG['support']['generalstats'] = "Estatísticas Gerais";
@@ -1591,7 +1590,7 @@ $_ADMINLANG['status']['paymentpending'] = "Pagamento pendente";
 # Permissions
 $_ADMINLANG['permissions']['accessdenied'] = "Acesso Negado";
 $_ADMINLANG['permissions']['nopermission'] = "Você não tem a permissão necessária para realizar a operação selecionada!";
-$_ADMINLANG['permissions']['action'] = "Ação Solicitada";
+$_ADMINLANG['permissions']['action'] = "Ação";
 $_ADMINLANG['permissions']['1'] = "Página Principal";
 $_ADMINLANG['permissions']['2'] = "Estatísticas na Coluna Lateral";
 $_ADMINLANG['permissions']['3'] = "Minha Conta";
@@ -2402,7 +2401,7 @@ $_ADMINLANG['bans']['ipdelsuccessinfo'] = "Endereço de IP Banido Apagado com Su
 $_ADMINLANG['bans']['ipdelsure'] = "Tem certeza que quer apagar esse endereço de IP Banido?";
 $_ADMINLANG['bans']['banreason'] = "Motivo";
 $_ADMINLANG['bans']['banexpires'] = "Expiração";
-$_ADMINLANG['bans']['format'] = "Formato: DD/MM/AAAA HH:MM"; #Formato não pode ser alterado, apenas os valores traduzidos
+$_ADMINLANG['bans']['format'] = "Formato: DD/MM/AAAA HH:MM";
 $_ADMINLANG['bans']['addbannedip'] = "Adicionar IP Banido";
 
 # Client Groups
@@ -2611,7 +2610,7 @@ $_ADMINLANG['general']['logourlinfo'] = "Digite a URL da sua logomarca para exib
 $_ADMINLANG['general']['payto'] = "Texto do Pagamento";
 $_ADMINLANG['general']['paytoinfo'] = "Esse texto é exibido na fatura, nos detalhes do Cedente (abaixo de Pagar Para)";
 $_ADMINLANG['general']['systemurl'] = "URL do Sistema WHMCS";
-$_ADMINLANG['general']['systemurlinfo'] = "URL da instalação do WHMCS, ex. http://www.seudominio.com/members/";
+$_ADMINLANG['general']['systemurlinfo'] = "URL da instalação do WHMCS (SSL Recomendado), ex. https://www.seudominio.com/members/";
 $_ADMINLANG['general']['template'] = "Modelo";
 $_ADMINLANG['general']['templateinfo'] = "O modelo que você quer que o WHMCS utilize";
 $_ADMINLANG['general']['limitactivitylog'] = "Limitar Log das Atividades";
@@ -2763,8 +2762,7 @@ $_ADMINLANG['general']['supportlastreplyupdatealways'] = "Toda vez que receber u
 $_ADMINLANG['general']['supportlastreplyupdateonlystatuschange'] = "Cada vez que o pessoal responde, apenas em uma mudança de status para os clientes";
 $_ADMINLANG['general']['disablereplylogging'] = "Desativar o Log dos Emails de Resposta";
 $_ADMINLANG['general']['disablereplylogginginfo'] = "Não criar um log que registre os emails com as respostas dos tickets (o texto já está registrado no ticket, assim economiza espaço no disco)";
-$_ADMINLANG['general']['kbseourls'] = "URLs SEO Amigáveis para BC";
-$_ADMINLANG['general']['kbseourlsinfo'] = "Marque para habilitar urls amigáveis SEO (É necessário renomear o arquivo htaccess.txt para .htaccess no diretório raiz)";
+
 $_ADMINLANG['general']['allowedattachments'] = "Tipos de Arquivo Anexo Permitido";
 $_ADMINLANG['general']['allowedattachmentsinfo'] = "Separara diversas extensões com vírgulas";
 $_ADMINLANG['general']['networklogin'] = "Exigir Login para Falhas na Rede";
