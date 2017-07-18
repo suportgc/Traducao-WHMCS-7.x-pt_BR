@@ -1705,7 +1705,7 @@ $_LANG['domainsTransferredAway'] = "Transferido Adiada";
 $_LANG['domainsExpiringInTheNext30Days'] = "Expira em 30 Dias";
 $_LANG['domainsExpiringInTheNext90Days'] = "Expira em 90 Dias";
 $_LANG['domainsExpiringInTheNext180Days'] = "Expira em 180 Dias";
-$_LANG['domainsExpiringInMoreThan180Days'] = "Expira em 180+ dias";
+$_LANG['domainsExpiringInMoreThan180Days'] = "Expira em 180+ Dias";
 
 $_LANG['kbtagcloud'] = "Tag da nuvem";
 
@@ -1775,7 +1775,7 @@ $_LANG['clientHomePanels']['recentSupportTicketsNone'] = "Nenhuns ticket recente
 $_LANG['clientHomePanels']['affiliateSummary'] = "Seu saldo atual é de comissão :commissionBalance. Você só precisa de outro :amountUntilWithdrawalLevel antes de poder levantar os seus ganhos.";
 $_LANG['clientHomePanels']['affiliateSummaryWithdrawalReady'] = "Seu saldo de comissão atual é :commissionBalance. Você pode retirar seus ganhos agora.";
 
-$_LANG['upgradeNotPossible'] = "Atualização deste produto não é possível. Se você acredita que você chegou a esta página por engano, por favor notifique o nosso departamento de suporte. Caso contrário, volte e verifique a sua seleção.";
+$_LANG['upgradeNotPossible'] = "Não é possível atualizar este produto. Se você acredita que você chegou a esta página por engano, por favor notifique o nosso departamento de suporte. Caso contrário, volte e verifique a sua seleção.";
 
 $_LANG['hostingInfo'] = "Informação de hospedagem";
 $_LANG['additionalInfo'] = "Informações adicionais";
@@ -2203,5 +2203,7 @@ $_LANG['ssl']['reissueCertificate'] = "Certificado de reedição";
 $_LANG['ssl']['retrieveCertificate'] = "Recuperar Certificado";
 
 $_LANG['upgradeCredit'] = "Atualizar Crédito";
-$_LANG['upgradeCreditDescription'] = "Cálculo baseado em :daysRemaining Dias não utilizados :totalDays Totais de dias no ciclo de faturamento atual.";
+$_LANG['upgradeCreditDescription'] = "Calculo baseado em :daysRemaining Dias não utilizados :totalDays Totais de dias no ciclo de faturamento atual.";
+$_LANG['orderForm']['domainExtensionTransferNotSupported'] = "Seu domínio não é suportado para transferência neste momento. Por favor tente outro domínio.";
+$_LANG['orderForm']['domainExtensionTransferPricingNotConfigured'] = "Seu domínio não é elegível para transferência neste momento. Por favor tente outro domínio.";
 ////////// End of portuguese-br language file.  Do not place any translation strings below this line!
