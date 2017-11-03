@@ -133,6 +133,9 @@ $_ADMINLANG['global']['description'] = "Descrição";
 $_ADMINLANG['global']['lastUpdated'] = "Última Atualização";
 $_ADMINLANG['global']['addAnother'] = "Adicionar Outra";
 $_ADMINLANG['global']['learnMore'] = "Saiba Mais";
+$_ADMINLANG['global']['activate'] = "Ativar";
+$_ADMINLANG['global']['deactivate'] = "Desativar";
+$_ADMINLANG['global']['saveAndActivate'] = "Salvar &amp; Ativar";
 
 # Home
 $_ADMINLANG['home']['title'] = "Início";
@@ -158,6 +161,7 @@ $_ADMINLANG['home']['openinvoices'] = "Faturas em Aberto";
 $_ADMINLANG['home']['lastlogin'] = "Seu último acesso";
 $_ADMINLANG['home']['lastloginip'] = "do IP";
 $_ADMINLANG['home']['whmcsnewsfeed'] = "Feed de Notícias WHMCS";
+$_ADMINLANG['home']['configureWidgetDisplayTitle'] = "Mostrar/Ocultar Widgets";
 
 # Stats
 $_ADMINLANG['stats']['title'] = "Estatísticas";
@@ -276,6 +280,7 @@ $_ADMINLANG['clients']['emailUnverified'] = "E-mail não verificado";
 $_ADMINLANG['clients']['ccInvalid'] = "O número do cartão de crédito digitado é inválido";
 $_ADMINLANG['clients']['cvvInvalid'] = "O número cartões CVV é necessário ou inválido";
 $_ADMINLANG['clients']['ccExpiryInvalid'] = "O prazo de validade digitado é inválido";
+$_ADMINLANG['clients']['remoteGatewayTitle'] = "Informações de gateway remoto";
 
 # Client Summary
 $_ADMINLANG['clientsummary']['title'] = "Perfil do Cliente";
@@ -1369,6 +1374,7 @@ $_ADMINLANG['setup']['customfields'] = "Campos Personalizados";
 $_ADMINLANG['setup']['orderstatuses'] = "Status da ordem";
 $_ADMINLANG['setup']['applicationLinks'] = "Links de Aplicativos";
 $_ADMINLANG['setup']['openIdConnect'] = "OpenID Conectado";
+$_ADMINLANG['setup']['signInIntegrations'] = "Integrações de login";
 
 # Help
 $_ADMINLANG['help']['title'] = "Ajuda";
@@ -1591,6 +1597,8 @@ $_ADMINLANG['status']['paymentpending'] = "Pagamento pendente";
 $_ADMINLANG['permissions']['accessdenied'] = "Acesso Negado";
 $_ADMINLANG['permissions']['nopermission'] = "Você não tem a permissão necessária para realizar a operação selecionada!";
 $_ADMINLANG['permissions']['action'] = "Ação";
+$_ADMINLANG['permissions']['requiresOne'] = "Requer um dos seguintes:";
+$_ADMINLANG['permissions']['requiresAll'] = "Requer todos os itens seguintes:";
 $_ADMINLANG['permissions']['1'] = "Página Principal";
 $_ADMINLANG['permissions']['2'] = "Estatísticas na Coluna Lateral";
 $_ADMINLANG['permissions']['3'] = "Minha Conta";
@@ -1732,6 +1740,7 @@ $_ADMINLANG['permissions']['81'] = "Acesso API";
 $_ADMINLANG['permissions']['131'] = "WHMCS Connect";
 $_ADMINLANG['permissions']['132'] = "Saúde e Atualizações";
 $_ADMINLANG['permissions']['139'] = "Ver o que há de novo";
+$_ADMINLANG['permissions']['143'] = "Configurar a integração de logon";
 
 # Addon Modules
 $_ADMINLANG['addonmodules']['choose'] = "Escolha um módulo addon abaixo";
@@ -2130,6 +2139,7 @@ $_ADMINLANG['administrators']['nosupportdeptsassigned'] = "Você atualmente não
 $_ADMINLANG['administrators']['nosupportdepts'] = "Não existem departamentos de suporte";
 $_ADMINLANG['administrators']['confirmExistingPassword'] = "Você deve confirmar sua senha de administrador existente";
 $_ADMINLANG['administrators']['ticketNotificationsUnavailable'] = "Suas permissões atualmente impedem que você receba notificações de ticket de suporte deste departamento.";
+$_ADMINLANG['administrators']['emailCannotBeSupport'] = "O endereço de e-mail já está sendo usado por um departamento de suporte. Por favor, forneça um endereço de e-mail diferente.";
 
 # Automation
 $_ADMINLANG['automation']['title'] = "Configurar Automação";
@@ -2263,6 +2273,44 @@ $_ADMINLANG['backups']['ftppath'] = "Destino FTP";
 $_ADMINLANG['backups']['ftppassivemode'] = "Modo FTP passivo";
 $_ADMINLANG['backups']['backupDisabled'] = "Backups desativados";
 $_ADMINLANG['backups']['zipExtensionRequired'] = "A <a href=\'http://php.net/manual/en/book.zip.php\'>extensão PHP ZIP</a> é necessária para utilizar backups de banco de dados.";
+$_ADMINLANG['backups']['cpanelBackupSuccess'] = "Configurações de backup do cPanel alteradas";
+$_ADMINLANG['backups']['cpanelBackupActivationSuccess'] = "cPanel Backup ativado & configurações atualizadas";
+$_ADMINLANG['backups']['emailBackupSuccess'] = "Configurações de backup de e-mail alteradas";
+$_ADMINLANG['backups']['emailBackupActivationSuccess'] = "Backup do email ativados & configurações atualizadas";
+$_ADMINLANG['backups']['ftpBackupSuccess'] = "Configurações de backup de FTP alteradas";
+$_ADMINLANG['backups']['ftpBackupActivationSuccess'] = "Backup de FTP ativado & configurações atualizadas";
+$_ADMINLANG['backups']['testConnection'] = "Teste de Conexão";
+$_ADMINLANG['backups']['saveAndActivate'] = "Salvar &amp; Ativar";
+$_ADMINLANG['backups']['deactivate'] = "Desativar";
+$_ADMINLANG['backups']['testSuccess'] = "Teste de conexão Realizado";
+$_ADMINLANG['backups']['deactivateSuccess'] = "Backup desativado com Sucesso";
+$_ADMINLANG['backups']['ftp'] = "Backup FTP/SFTP";
+$_ADMINLANG['backups']['useSecureFtp'] = "Usar FTP/SFTP Seguro (Recomendado)";
+$_ADMINLANG['backups']['cpanel'] = "Backup cPanel";
+$_ADMINLANG['backups']['cpanelHostname'] = "Nome do host do servidor cPanel/WHM";
+$_ADMINLANG['backups']['cpanelUsername'] = "Nome de usuário API do WHM";
+$_ADMINLANG['backups']['cpanelUsernameDescription'] = "Digite o nome de usuário do WHM para o seu servidor.";
+$_ADMINLANG['backups']['cpanelApiToken'] = "Token API do WHM";
+$_ADMINLANG['backups']['cpanelApiTokenDescription'] = "Crie um Token API no WHM > Desenvolvimento > Gerenciar Tokens API. Recomendamos gerar um novo Token API para backups.";
+$_ADMINLANG['backups']['cpanelBackupUser'] = "Nome de usuário cPanel";
+$_ADMINLANG['backups']['cpanelBackupUserDescription'] = "Digite o nome de usuário do cPanel da conta que hospeda a instalação do WHMCS.";
+$_ADMINLANG['backups']['cpanelBackupDestination'] = "Destino do backup";
+$_ADMINLANG['backups']['cpanelBackupDestinationHomeDirectory'] = "Diretório inicial";
+$_ADMINLANG['backups']['cpanelBackupDestinationSCP'] = "Cópia segura (SCP)";
+$_ADMINLANG['backups']['cpanelBackupDestinationFTP'] = "Servidor FTP Remoto";
+$_ADMINLANG['backups']['cpanelBackupDestinationPassiveFTP'] = "Servidor FTP Remoto (Conexão passiva)";
+$_ADMINLANG['backups']['cpanelBackupDestinationHostname'] = "Nome do host de destino remoto";
+$_ADMINLANG['backups']['cpanelBackupDestinationPort'] = "Porta";
+$_ADMINLANG['backups']['cpanelBackupDestinationUser'] = "Usuário de destino remoto";
+$_ADMINLANG['backups']['cpanelBackupDestinationPassword'] = "Senha de destino remoto";
+$_ADMINLANG['backups']['cpanelBackupDestinationDirectory'] = "Diretório de Destino Remoto";
+$_ADMINLANG['backups']['cpanelBackupNotifyEmail'] = "Endereço de e-mail";
+$_ADMINLANG['backups']['cpanelBackupNotifyEmailDescription'] = "O endereço de e-mail que deve receber um email de confirmação quando o backup for concluído.";
+$_ADMINLANG['backups']['emailBackupEmail'] = "Endereço de e-mail";
+$_ADMINLANG['backups']['emailBackupEmailInfo'] = "Digite o endereço de e-mail onde você deseja que os backups sejam entregues para.";
+$_ADMINLANG['backups']['testingConnection'] = "Testando conexão...";
+$_ADMINLANG['backups']['confirmDeactivate'] = "Confirmar desativação";
+$_ADMINLANG['backups']['deactivateAreYouSure'] = "Tem certeza de que deseja desativar esse tipo de backup?";
 
 # System
 $_ADMINLANG['system']['activitylog'] = "Log da Atividade do Sistema";
@@ -2485,6 +2533,7 @@ $_ADMINLANG['emailtpls']['copyto'] = "Enviar Cópia para";
 $_ADMINLANG['emailtpls']['cannotCreateTemplate'] = "O modelo não pôde ser criado.";
 $_ADMINLANG['emailtpls']['nameNotUniqueInfo'] = "Escolha um nome de modelo exclusivo.";
 $_ADMINLANG['emailtpls']['nameCannotBeBlank'] = "O nome do modelo não pode ficar em branco.";
+$_ADMINLANG['emailtpls']['bcc'] = "Cópia cega para";
 
 # Merge Fields
 $_ADMINLANG['mergefields']['title'] = "Campos de Mesclagem Disponíveis";
@@ -2762,7 +2811,6 @@ $_ADMINLANG['general']['supportlastreplyupdatealways'] = "Toda vez que receber u
 $_ADMINLANG['general']['supportlastreplyupdateonlystatuschange'] = "Cada vez que o pessoal responde, apenas em uma mudança de status para os clientes";
 $_ADMINLANG['general']['disablereplylogging'] = "Desativar o Log dos Emails de Resposta";
 $_ADMINLANG['general']['disablereplylogginginfo'] = "Não criar um log que registre os emails com as respostas dos tickets (o texto já está registrado no ticket, assim economiza espaço no disco)";
-
 $_ADMINLANG['general']['allowedattachments'] = "Tipos de Arquivo Anexo Permitido";
 $_ADMINLANG['general']['allowedattachmentsinfo'] = "Separara diversas extensões com vírgulas";
 $_ADMINLANG['general']['networklogin'] = "Exigir Login para Falhas na Rede";
@@ -3011,6 +3059,7 @@ $_ADMINLANG['supportticketdepts']['pop3user'] = "Endereço de email";
 $_ADMINLANG['supportticketdepts']['pop3pass'] = "Senha do email";
 $_ADMINLANG['supportticketdepts']['feedbackRequest'] = "Pedido de Comentários";
 $_ADMINLANG['supportticketdepts']['feedbackRequestDescription'] = "Enviar pedido de avaliação/comentário de ticket ao fecha-ló";
+$_ADMINLANG['supportticketdepts']['emailCannotBeAdmin'] = "O endereço de e-mail já está sendo usado por um usuário administrativo. Por favor, forneça um endereço de e-mail diferente.";
 
 # Support Ticket Escalations
 $_ADMINLANG['supportticketescalations']['supportticketescalationstitle'] = "Escalonamento dos Tickets de Suporte";
@@ -3098,6 +3147,7 @@ $_ADMINLANG['sendmessage']['marketingemaildesc'] = "Lembre-se de incluir o link 
 $_ADMINLANG['sendmessage']['loadMessage'] = "Carregar mensagem";
 $_ADMINLANG['sendmessage']['noSaveNameEntered'] = "Você deve digitar um nome para salvar a mensagem como um modelo de e-mail";
 $_ADMINLANG['sendmessage']['uniqueSaveNameRequired'] = "O salvamento do modelo de e-mail deve ser exclusivo";
+$_ADMINLANG['sendmessage']['bcc'] = "BCC";
 
 # Support Ticket Spam Control
 $_ADMINLANG['stspamcontrol']['stspamcontroltitle'] = "Controle de Spam de Ticket de Suporte";
@@ -3597,7 +3647,8 @@ $_ADMINLANG['healthCheck']['updaterDisabledFunctions'] = "Atualizações automá
 $_ADMINLANG['healthCheck']['updaterVendorWriteable'] = "As atualizações automáticas exigem que o diretório /vendor/whmcs/whmcs/ seja gravável.";
 $_ADMINLANG['healthCheck']['updaterTempSet'] = "As atualizações automáticas requerem um diretório gravável para armazenamento de arquivos durante uma atualização. Você deve fornecer um diretório através da Configuração do Atualizador antes de poder atualizá-lo.";
 $_ADMINLANG['healthCheck']['updaterTempWriteable'] = "As atualizações automáticas requerem um diretório gravável para armazenamento de arquivos durante uma atualização. O caminho temporário definido atualmente não pode ser gravado. Verifique e corrija as permissões.";
-$_ADMINLANG['healthCheck']['updaterMemoryLimit'] = "As atualizações automáticas requerem pelo menos 128MB de memória disponível alocada para o processo PHP. Sua configuração atual de memory_limit do PHP é menor do que isso. Para atualizar, por favor, aumente o memory_limit dentro de sua configuração PHP para 128MB ou mais.";
+$_ADMINLANG['healthCheck']['updaterGeneralMemoryLimit'] = "As atualizações automáticas requerem pelo menos :memoryLimitRequired de memória disponível alocada para o processo PHP. Sua configuração atual de memory_limit do PHP é menor do que isso. Para atualizar, por favor, aumente o memory_limit dentro de sua configuração PHP para :memoryLimitRequired ou mais.";
+$_ADMINLANG['healthCheck']['updaterVersionMemoryLimit'] = "Atualização automática para versão :updateVersion requer ao menos :memoryLimitRequired de memória disponível alocada ao processo PHP. Seu memory_limit atual do PHP é menor que esta. Para atualizar, aumente o memory_limit na configuração do PHP para :memoryLimitRequired ou mais alto.";
 $_ADMINLANG['healthCheck']['updaterSuccess'] = "Seu ambiente parece atender aos requisitos mínimos para atualizações automáticas. Para atualizar, você precisará garantir que você tenha pelo menos 250 MB de espaço disponível em disco.";
 
 $_ADMINLANG['appLinks']['description'] = "Links de Aplicativos permitem que você forneça acesso à contas de usuários no WHMCS à partir de aplicativos de terceiro.";
@@ -3758,8 +3809,7 @@ $_ADMINLANG['wizard']['enomCredentials'] = "Agora escolha suas credenciais da co
 $_ADMINLANG['wizard']['enomIpWhiteList'] = "eNom requer seu endereço de IP do servidor para acesso à API :link";
 $_ADMINLANG['wizard']['enomRecommended'] = "Recomendamos eNom para registro de domínio e configuração de SSL.";
 $_ADMINLANG['wizard']['enomSecurityQuestionSelectOne'] = "- Selecione um -";
-$_ADMINLANG['wizard']['enomSecurityQuestionFavoriteTeacher'] = "
-Professor favorito";
+$_ADMINLANG['wizard']['enomSecurityQuestionFavoriteTeacher'] = "Professor favorito";
 $_ADMINLANG['wizard']['enomSecurityQuestionFavoriteVacationSpot'] = "Local de férias preferido";
 $_ADMINLANG['wizard']['enomSecurityQuestionFavoritePet'] = "Animal de estimação favorito";
 $_ADMINLANG['wizard']['enomSecurityQuestionFavoriteMovie'] = "Filme favorito";
@@ -3802,15 +3852,55 @@ $_ADMINLANG['queue']['retryResponse'] = "Resposta de repetição: :error";
 $_ADMINLANG['queue']['numberItems'] = ":count Itens na fila";
 $_ADMINLANG['queue']['numberItem'] = ":count Item na fila";
 $_ADMINLANG['queue']['noItems'] = "Nenhuma ação do módulo em fila";
+
 $_ADMINLANG['apicredentials']['create'] = "Gerar nova credencial de API";
 $_ADMINLANG['apicredentials']['reveal'] = "Revelar";
 $_ADMINLANG['apicredentials']['generate'] = "Gerar";
 $_ADMINLANG['apicredentials']['delete'] = "Excluir credenciais";
 $_ADMINLANG['apicredentials']['deletePrompt'] = "Deseja excluir essas credenciais?<br><br> Esta ação não pode ser revertida.";
+
 $_ADMINLANG['uriPathMgmt']['labelFriendlyUrls'] = "URLs amigáveis";
 $_ADMINLANG['uriPathMgmt']['btnModeRewrite'] = "Reescrita completa amigável";
 $_ADMINLANG['uriPathMgmt']['btnModeAcceptPathInfo'] = "index.php Amigáveis";
 $_ADMINLANG['uriPathMgmt']['btnModeBasic'] = "URLs Básicas";
 $_ADMINLANG['uriPathMgmt']['labelManualOverride'] = "Controle manual";
 $_ADMINLANG['uriPathMgmt']['labelSystemDetected'] = "Detectado pelo sistema";
+
+$_ADMINLANG['remoteAuthn']['remoteClientAuthentication'] = "Integrações de login";
+$_ADMINLANG['remoteAuthn']['settingsDesc'] = "Os seguintes serviços de terceiros são suportados para permitir que os usuários se cadastram e faça o login. Você pode ativar um ou mais desses.";
+
 $_ADMINLANG['whatsNew']['menuTitle'] = "O que há de novo";
+
+$_ADMINLANG['signIn']['linkedTableTitle'] = "Contas de login vinculadas";
+$_ADMINLANG['signIn']['provider'] = "Provedor";
+$_ADMINLANG['signIn']['name'] = "Nome";
+$_ADMINLANG['signIn']['emailAddress'] = "Endereço de e-mail";
+$_ADMINLANG['signIn']['emptyTable'] = "Nenhuma conta vinculada encontrada";
+$_ADMINLANG['signIn']['delCheckTitle'] = "Você tem certeza?";
+$_ADMINLANG['signIn']['delCheckBody'] = "Isso desvincula permanentemente a conta autorizada.";
+$_ADMINLANG['signIn']['docLink'] = "Para mais informações, consulte o <a href='https://docs.whmcs.com/Configuring_Sign-In_using_%s' target='_blank'>guia de ajuda</a>.";
+$_ADMINLANG['signIn']['invalidDetails'] = "<strong>Detalhes inválidos não guardados.</strong> Verifique seus detalhes e tente novamente.";
+
+$_ADMINLANG['errorPage']['general']['oops'] = "Oops!";
+$_ADMINLANG['errorPage']['general']['tryOtherNav'] = "Tente navegar usando as opções abaixo.";
+$_ADMINLANG['errorPage']['general']['home'] = "Pagina inicial";
+$_ADMINLANG['errorPage']['general']['submitTicket'] = "Entre em contato com o suporte";
+$_ADMINLANG['errorPage']['general']['invalidCsrfToken'] = "Token CSRF inválido";
+$_ADMINLANG['errorPage']['400']['title'] = "Solicitação Falhou";
+$_ADMINLANG['errorPage']['400']['subtitle'] = "Solicitação Inválida.";
+$_ADMINLANG['errorPage']['400']['description'] = "";
+$_ADMINLANG['errorPage']['401']['title'] = "Acesso negado - não autorizado";
+$_ADMINLANG['errorPage']['401']['subtitle'] = "O acesso a esta página requer autorização.";
+$_ADMINLANG['errorPage']['401']['description'] = "";
+$_ADMINLANG['errorPage']['403']['title'] = "Acesso negado - Proibido";
+$_ADMINLANG['errorPage']['403']['subtitle'] = "Você não possui a permissão necessária para executar a operação selecionada!";
+$_ADMINLANG['errorPage']['403']['description'] = "";
+$_ADMINLANG['errorPage']['404']['title'] = "Oops!";
+$_ADMINLANG['errorPage']['404']['subtitle'] = "Não conseguimos encontrar essa página";
+$_ADMINLANG['errorPage']['404']['description'] = "Tente navegar usando as opções abaixo.";
+$_ADMINLANG['errorPage']['405']['title'] = "Método HTTP não permitido";
+$_ADMINLANG['errorPage']['405']['subtitle'] = "Solicitação Inválida";
+$_ADMINLANG['errorPage']['405']['description'] = "";
+$_ADMINLANG['errorPage']['500']['title'] = "Erro Interno";
+$_ADMINLANG['errorPage']['500']['subtitle'] = "Um erro inesperado ocorreu.";
+$_ADMINLANG['errorPage']['500']['description'] = "Se o problema persistir, entre em contato com o suporte.";

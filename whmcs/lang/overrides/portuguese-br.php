@@ -759,7 +759,7 @@ $_LANG['supportticketserrornomessage'] = "Você não digitou sua Mensagem";
 $_LANG['supportticketserrornoname'] = "Você não digitou seu Nome";
 $_LANG['supportticketserrornosubject'] = "Você não digitou o Assunto";
 $_LANG['supportticketsfilenotallowed'] = "O arquivo que você tentou enviar não é permitido.";
-$_LANG['supportticketsheader'] = "Se você não conseguir encontrar a solução para seu problema em nossa Base de Conhecimento, envie um Ticket de Suporte para o departamento selecionado abaixo.";
+$_LANG['supportticketsheader'] = "Escolha o departamento abaixo para abrir um ticket.";
 $_LANG['supportticketsnotfound'] = "O ticket não foi encontrado";
 $_LANG['supportticketsopentickets'] = "Tickets de Suporte abertos";
 $_LANG['supportticketspagetitle'] = "Tickets de Suporte";
@@ -1398,9 +1398,9 @@ $_LANG['domainaddonscancelfailed'] = "Falha ao desativar addon. Entre em contato
 $_LANG['yourclientareahostingaddons'] = "Addons para este produto.";
 $_LANG['loginrequired'] = "Login Requirido";
 $_LANG['unsubscribe'] = "Cancelar subscrição";
-$_LANG['emailoptout'] = "Boletins Informativos";
+$_LANG['emailoptout'] = "Boletim Informativo";
 $_LANG['newsletterunsubscribe'] = "Desinscrever-se das notícias";
-$_LANG['emailoptoutdesc'] = "Assinale cancelar a inscrição de nossos boletins";
+$_LANG['emailoptoutdesc'] = "Assinale para cancelar a inscrição de nossos boletins";
 $_LANG['alreadyunsubscribed'] = "Você já cancelou a inscrição de nosso boletim informativo.";
 $_LANG['newsletterresubscribe'] = "Se você desejar re- assinar você pode fazê-lo a partir da seção %sMeus detalhes%s seção de nossa área do cliente a qualquer momento.";
 $_LANG['unsubscribehashinvalid'] = "Unsubscribe falhou, por favor contate o suporte.";
@@ -1420,7 +1420,7 @@ $_LANG['feedbackprovided'] = "Você já forneceram feedback para este ticket";
 $_LANG['feedbackthankyou'] = "Nós agradecemos-lhe por ter tomado a tempo para fornecer o seu feedback.";
 $_LANG['feedbackreceived'] = "Submissão recebida";
 $_LANG['feedbackdesc'] = "Por favor, podemos pedir-lhe para ter um momento de seu tempo para preencher o formulário abaixo sobre a qualidade de sua experiência com a nossa equipe de suporte.";
-$_LANG['feedbackclickreview'] = "Clique aqui para retornar aos Tickets";
+$_LANG['feedbackclickreview'] = "Clique aqui para rever os Ticket";
 $_LANG['feedbackopenedat'] = "Aberto às";
 $_LANG['feedbacklastreplied'] = "Última Respondidos";
 $_LANG['feedbackstaffinvolved'] = "Pessoal envolvido";
@@ -1575,7 +1575,7 @@ $_LANG['billingdetails'] = "Detalhes da conta";
 $_LANG['homechooseproductservice'] = "Gerenciar produto/serviço:";
 
 $_LANG['invoicesdue'] = "Faturas";
-$_LANG['invoicesduemsg'] = "%s factura (s) em aberto</br>Total: %s";
+$_LANG['invoicesduemsg'] = "%s fatura (s) em aberto</br>Total: %s";
 $_LANG['noinvoicesduemsg'] = "Você não tem faturas em aberto.";
 
 $_LANG['expiringsoon'] = "Expirando";
@@ -1602,14 +1602,14 @@ $_LANG['tablepageslast'] = "Ultimo";
 $_LANG['tablepagesnext'] = "próximo";
 $_LANG['tablepagesprevious'] = "Anterior";
 $_LANG['tableviewall'] = "Todos";
-$_LANG['tableentersearchterm'] = "Digite o termo pesquisar...";
+$_LANG['tableentersearchterm'] = "Pesquisar...";
 
 $_LANG['actions'] = "Ações";
 
 $_LANG['upgradedowngradeshort'] = "Up/Downgrade";
 
 $_LANG['masspayintro'] = "Pagar todas as faturas listadas abaixo em uma única transação, escolhendo a forma de pagamento";
-$_LANG['masspaymentselectgateway'] = "Selecione Gateway de Pagamento";
+$_LANG['masspaymentselectgateway'] = "Selecione a forma de pagamento";
 
 $_LANG['ticketfeedbackrequest'] = "Feedback solicitado";
 $_LANG['ticketfeedbackforticket'] = "para Ticket #";
@@ -1637,7 +1637,7 @@ $_LANG['makepayment'] = "Fazer pagamento";
 $_LANG['getsupport'] = "Obter Suporte";
 
 $_LANG['news'] = "Notícias";
-$_LANG['allthelatest'] = "Tudo sobre o";
+$_LANG['allthelatest'] = "Tudo a partir";
 $_LANG['readmore'] = "Leia mais...";
 $_LANG['noannouncements'] = "Não há anúncios para mostrar";
 
@@ -2108,7 +2108,7 @@ $_LANG['orderForm']['required'] = "Exigido";
 
 $_LANG['orderForm']['checkingAvailability'] = "Checando disponibilidade";
 $_LANG['orderForm']['verifyingTransferEligibility'] = "Verificando a elegibilidade de transferência";
-$_LANG['orderForm']['verifyingDomain'] = "Verificando sua seleção de domínio";
+$_LANG['orderForm']['verifyingDomain'] = "Verificando disponibilidade";
 $_LANG['orderForm']['transferEligible'] = "Seu domínio está qualificado para a transferência";
 $_LANG['orderForm']['transferUnlockBeforeContinuing'] = "Certifique-se de ter desbloqueado o seu domínio no seu provedor atual antes de continuar.";
 $_LANG['orderForm']['transferNotEligible'] = "Não Elegível para Transferência";
@@ -2206,4 +2206,53 @@ $_LANG['upgradeCredit'] = "Atualizar Crédito";
 $_LANG['upgradeCreditDescription'] = "Calculo baseado em :daysRemaining Dias não utilizados :totalDays Totais de dias no ciclo de faturamento atual.";
 $_LANG['orderForm']['domainExtensionTransferNotSupported'] = "Seu domínio não é suportado para transferência neste momento. Por favor tente outro domínio.";
 $_LANG['orderForm']['domainExtensionTransferPricingNotConfigured'] = "Seu domínio não é elegível para transferência neste momento. Por favor tente outro domínio.";
+$_LANG['orderForm']['domainExtensionTransferPricingNotConfigured'] = "Seu domínio não é elegível para transferência para nós. Por favor, tente outro domínio.";
+
+$_LANG['remoteAuthn']['success'] = "Sucesso!";
+$_LANG['remoteAuthn']['errorExclamation'] = "Erro!";
+$_LANG['remoteAuthn']['error'] = "Erro";
+$_LANG['remoteAuthn']['linkInitiated'] = "Link iniciado!";
+$_LANG['remoteAuthn']['areYouSure'] = "Você tem certeza?";
+$_LANG['remoteAuthn']['yesUnlinkIt'] = "Sim, desvincular!";
+$_LANG['remoteAuthn']['unlinked'] = "Desvinculado!";
+$_LANG['remoteAuthn']['unavailable'] = "está indisponível no momento. Por favor, tente novamente mais tarde.";
+$_LANG['remoteAuthn']['connectError'] = "Não foi possível conectar sua conta. Entre em contato com o administrador do sistema.";
+$_LANG['remoteAuthn']['completeSignIn'] = "Por favor, complete o login com o fornecedor de serviços escolhido.";
+$_LANG['remoteAuthn']['redirecting'] = "O login automático foi bem sucedido! Redirecionando..";
+$_LANG['remoteAuthn']['accountNowLinked'] = "Sua conta agora está vinculada ao seu :displayName conta.";
+$_LANG['remoteAuthn']['oneTimeAuthRequired'] = "É necessária uma única sessão para associar sua conta existente.";
+$_LANG['remoteAuthn']['completeRegistrationForm'] = "Por favor, Complete o formulário de inscrição abaixo.";
+$_LANG['remoteAuthn']['completeNewAccountForm'] = "Por favor, Complete suas novas informações de conta.";
+$_LANG['remoteAuthn']['linkedToAnotherClient'] = "Esta conta já está conectada a uma conta existente conosco. Por favor, escolha uma conta diferente no provedor de autenticação de terceiros.";
+$_LANG['remoteAuthn']['alreadyLinkedToYou'] = "Esta conta já está conectada à sua conta conosco. Por favor, escolha uma conta diferente no provedor de autenticação de terceiros.";
+$_LANG['remoteAuthn']['saveTimeByLinking'] = "Economize tempo ao se inscrever usando uma conta existente com qualquer um dos serviços abaixo.";
+$_LANG['remoteAuthn']['unlinkDesc'] = "Isso desvincula permanentemente a conta autorizada.";
+$_LANG['remoteAuthn']['mayHaveMultipleLinks'] = "Conecte sua conta com qualquer um dos serviços abaixo para simplificar sua experiência de login. Nós usamos apenas essas informações para verificar sua conta e nunca publicaremos em seu nome.";
+$_LANG['remoteAuthn']['titleSignUpVerb'] = "Inscrever-se";
+$_LANG['remoteAuthn']['titleOr'] = "Ou";
+$_LANG['remoteAuthn']['titleLinkedAccounts'] = "Contas vinculadas";
+$_LANG['remoteAuthn']['provider'] = "Provedor";
+$_LANG['remoteAuthn']['name'] = "Nome";
+$_LANG['remoteAuthn']['emailAddress'] = "Endereço de e-mail";
+$_LANG['remoteAuthn']['actions'] = "Ações";
+$_LANG['remoteAuthn']['noLinkedAccounts'] = "Nenhuma conta vinculada encontrada";
+
+$_LANG['unlink'] = "Desvincular";
+
+$_LANG['invoicePaymentSuccessAwaitingNotify'] = "Obrigado por completar o processo de pagamento. Estamos aguardando notificação para confirmar o pagamento que você acabou de fazer. Nós lhe enviaremos uma confirmação de e-mail assim que isso for recebido.";
+
+$_LANG['errorPage']['404']['title'] = "Oops!";
+$_LANG['errorPage']['404']['subtitle'] = "Não conseguimos encontrar essa página";
+$_LANG['errorPage']['404']['description'] = "Tente navegar usando as opções abaixo.";
+$_LANG['errorPage']['404']['home'] = "Pagina inicial";
+$_LANG['errorPage']['404']['submitTicket'] = "Entre em contato com o suporte";
+
+$_LANG['creditCard']['removeDescription'] = "Tem certeza de que deseja remover os detalhes do seu cartão de crédito?";
+
+$_LANG['marketConnect']['weebly']['ftpHost'] = "Host FTP";
+$_LANG['marketConnect']['weebly']['ftpUsername'] = "Nome de usuário de FTP";
+$_LANG['marketConnect']['weebly']['ftpPassword'] = "Senha do FTP";
+$_LANG['marketConnect']['weebly']['ftpPath'] = "Caminho do FTP";
+$_LANG['marketConnect']['weebly']['updateFtp'] = "Atualizar credenciais de FTP";
+$_LANG['marketConnect']['weebly']['manage'] = "Logar no Weebly";
 ////////// End of portuguese-br language file.  Do not place any translation strings below this line!
