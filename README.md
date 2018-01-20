@@ -19,6 +19,12 @@ Tradução Livre do WHMCS versão 7 para Português do Brasil, baseada no arquiv
 8. No campo "Idioma, selecione 'Portugues', insira sua senha em 'Confirmar Senha' e clique em Salvar Alterações"
 
 ### Changelog
+###### 20/01/2018
+ - Update para a versão 7.4.2
+ - Teste de compatibilidade efetuado na versão 7.4.2
+ - Traduções incorretas corrigidas
+ - Adicionadas novas traduções
+ 
 ###### 03/11/2017
  - Update para a versão 7.3.0
  - Teste de compatibilidade efetuado na versão 7.3.0
