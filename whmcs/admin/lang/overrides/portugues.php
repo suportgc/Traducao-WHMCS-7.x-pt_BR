@@ -42,6 +42,7 @@ $_ADMINLANG['global']['save'] = "Gravar";
 $_ADMINLANG['global']['cancel'] = "Cancelar";
 $_ADMINLANG['global']['delete'] = "Apagar";
 $_ADMINLANG['global']['deleteconfirm'] = "Tem certeza de que deseja excluir os itens selecionados?";
+$_ADMINLANG['global']['deleteconfirmitem'] = "Este item será removido permanentemente.";
 $_ADMINLANG['global']['validationerror'] = "Erro de Validação";
 $_ADMINLANG['global']['none'] = "Nenhum";
 $_ADMINLANG['global']['default'] = "Padrão";
@@ -136,6 +137,8 @@ $_ADMINLANG['global']['learnMore'] = "Saiba Mais";
 $_ADMINLANG['global']['activate'] = "Ativar";
 $_ADMINLANG['global']['deactivate'] = "Desativar";
 $_ADMINLANG['global']['saveAndActivate'] = "Salvar &amp; Ativar";
+$_ADMINLANG['global']['areYouSure'] = "Você tem certeza?";
+$_ADMINLANG['global']['copy'] = "Copiar";
 
 # Home
 $_ADMINLANG['home']['title'] = "Início";
@@ -734,6 +737,10 @@ $_ADMINLANG['orders']['updateSaveNotes'] = "Atualizar/Gravar";
 $_ADMINLANG['orders']['fraudCheckUpdateCompleted'] = "Atualização Completada";
 $_ADMINLANG['orders']['noInvoice'] = "Nenhuma Fatura";
 $_ADMINLANG['orders']['orderSummary'] = "Resumo do Pedido";
+$_ADMINLANG['orders']['applyCreditAmount'] = "Aplicar <span>:amount</span> do saldo de crédito dos clientes para este pedido e o cliente pagará o valor restante através do método de pagamento selecionado.";
+$_ADMINLANG['orders']['applyCreditAmountNoFurtherPayment'] = "Aplicar <span>:amount</span> do saldo de crédito dos clientes para este pedido. Nenhum pagamento adicional será devido.";
+$_ADMINLANG['orders']['applyCreditSkip'] = "Não aplique qualquer crédito do saldo de créditos dos clientes para este pedido. O Cliente pagará por isso usando o método de pagamento selecionado.";
+$_ADMINLANG['orders']['availableCreditBalance'] = "O saldo de crédito disponível para clientes é :amount.";
 
 
 # Billing Cycles
@@ -1188,6 +1195,17 @@ $_ADMINLANG['support']['returnToTicketList'] = "Voltar à lista de Tickets";
 $_ADMINLANG['support']['ticketWatchers'] = "Monitoramento de Ticket";
 $_ADMINLANG['support']['anyStatus'] = "Qualquer Status";
 $_ADMINLANG['support']['addTag'] = "Adicionar uma etiqueta ...";
+$_ADMINLANG['support']['ticketChangesTitle'] = "Ticket Modificado";
+$_ADMINLANG['support']['ticketChanges'] = "Este ticket foi modificado desde que você começou a trabalhar nele. Tem certeza que deseja continuar?";
+$_ADMINLANG['support']['newReply'] = "Uma nova resposta no ticket foi postada por um membro da equipe.";
+$_ADMINLANG['support']['newReplyByClient'] = "Uma nova resposta no ticket foi postada pelo usuário final.";
+$_ADMINLANG['support']['statusChange'] = "O status do ticket mudou de ':oldStatus' para ':newStatus'.";
+$_ADMINLANG['support']['ccChange'] = "Ticket CC mudou de ':oldCc' para ':newCc'.";
+$_ADMINLANG['support']['userChange'] = "ID do usuário do ticket alterado de ':oldUser' para ':newUser'.";
+$_ADMINLANG['support']['departmentChange'] = "O departamento do ticket mudou de ':oldDepartment' para ':newDepartment'.";
+$_ADMINLANG['support']['flagChange'] = "Sinalizador de administração de tickets mudou de ':oldFlag' para ':newFlag'.";
+$_ADMINLANG['support']['priorityChange'] = "A prioridade do ticket mudou de ':oldPriority' para ':newPriority'.";
+$_ADMINLANG['support']['subjectChange'] = "Assunto do ticket alterado de ':oldSubject' para ':newSubject'.";
 
 # Network Issues
 $_ADMINLANG['networkissues']['title'] = "Falhas na Rede";
@@ -1461,6 +1479,7 @@ $_ADMINLANG['fields']['taxrate'] = "Taxa de Imposto";
 $_ADMINLANG['fields']['taxed'] = "Impostos?";
 $_ADMINLANG['fields']['subtotal'] = "Sub-total";
 $_ADMINLANG['fields']['client'] = "Cliente";
+$_ADMINLANG['fields']['guest'] = "Convidado";
 $_ADMINLANG['fields']['contact'] = "Contato";
 $_ADMINLANG['fields']['orderip'] = "IP do Pedido";
 $_ADMINLANG['fields']['promocode'] = "Código Promocional";
@@ -1533,6 +1552,9 @@ $_ADMINLANG['fields']['language'] = "Idioma";
 $_ADMINLANG['fields']['controlpanel'] = "Painel de Controle";
 $_ADMINLANG['fields']['hostnameip'] = "Hostname/IP";
 $_ADMINLANG['fields']['lastCaptureAttempt'] = "Última tentativa de captura";
+$_ADMINLANG['fields']['events'] = "Eventos";
+$_ADMINLANG['fields']['conditions'] = "Condições";
+$_ADMINLANG['fields']['failureMessage'] = "Mensagem de falha";
 
 # Contact Permissions
 $_ADMINLANG['contactpermissions']['permprofile'] = "Modificar Perfil Mestre da Conta";
@@ -1695,6 +1717,7 @@ $_ADMINLANG['permissions']['137'] = "Ver fila do módulo";
 $_ADMINLANG['permissions']['63'] = "Configurações Gerais";
 $_ADMINLANG['permissions']['133'] = "Configurar Links de Aplicativos";
 $_ADMINLANG['permissions']['141'] = "Gerenciar MarketConnect";
+$_ADMINLANG['permissions']['144'] = "Gerenciar Notificações";
 $_ADMINLANG['permissions']['134'] = "Configurar OpenID Connect";
 $_ADMINLANG['permissions']['64'] = "Configurar Administradores";
 $_ADMINLANG['permissions']['65'] = "Configurar Funções Administrativas";
@@ -2107,6 +2130,8 @@ $_ADMINLANG['administrators']['emailerror'] = "Você deve digitar o seu email";
 $_ADMINLANG['administrators']['emailinvalid'] = "Você deve digitar um endereço de e-mail válido";
 $_ADMINLANG['administrators']['usererror'] = "Você deve digitar o seu nome de usuário";
 $_ADMINLANG['administrators']['userexists'] = "O nome de usuário que você inseriu já está em uso";
+$_ADMINLANG['administrators']['userLength'] = "O nome de usuário deve ter no mínimo 2 caracteres";
+$_ADMINLANG['administrators']['userexists'] = "O nome de usuário que você digitou já está em uso";
 $_ADMINLANG['administrators']['pwerror'] = "Você precisa digitar uma senha";
 $_ADMINLANG['administrators']['currentPassError'] = "Você deve confirmar a sua senha de administrador existente para fazer alterações à sua conta";
 $_ADMINLANG['administrators']['pwmatcherror'] = "As senhas digitadas não conferem";
@@ -2534,6 +2559,7 @@ $_ADMINLANG['emailtpls']['cannotCreateTemplate'] = "O modelo não pôde ser cria
 $_ADMINLANG['emailtpls']['nameNotUniqueInfo'] = "Escolha um nome de modelo exclusivo.";
 $_ADMINLANG['emailtpls']['nameCannotBeBlank'] = "O nome do modelo não pode ficar em branco.";
 $_ADMINLANG['emailtpls']['bcc'] = "Cópia cega para";
+$_ADMINLANG['emailtpls']['typeNotification'] = "Notificação";
 
 # Merge Fields
 $_ADMINLANG['mergefields']['title'] = "Campos de Mesclagem Disponíveis";
@@ -2626,6 +2652,16 @@ $_ADMINLANG['mergefields']['ticketChanges'] = "Mudanças no ticket";
 $_ADMINLANG['mergefields']['newTicket'] = "Nova mensagem";
 $_ADMINLANG['mergefields']['newReply'] = "Nova resposta";
 $_ADMINLANG['mergefields']['newNote'] = "Nova nota";
+$_ADMINLANG['mergefields']['notification'] = "Notificação Relacionada";
+$_ADMINLANG['mergefields']['notificationTitle'] = "Título da Notificação";
+$_ADMINLANG['mergefields']['notificationUrl'] = "Url da Notificação";
+$_ADMINLANG['mergefields']['notificationMessage'] = "Mensagem da Notificação";
+$_ADMINLANG['mergefields']['notificationAttributes'] = "Uma série de atributos para a notificação";
+$_ADMINLANG['mergefields']['notificationAttributesLabel'] = "O rótulo do atributo. por exemplo. Total";
+$_ADMINLANG['mergefields']['notificationAttributesValue'] = "O valor do atributo. por exemplo. R$ 10,00 BRL";
+$_ADMINLANG['mergefields']['notificationAttributesUrl'] = "O URL do atributo (se aplicável)";
+$_ADMINLANG['mergefields']['notificationAttributesStyle'] = "A classe do atributo (se aplicável)";
+$_ADMINLANG['mergefields']['notificationAttributesIcon'] = "O ícone do atributo (se aplicável)";
 
 # Config Fraud
 $_ADMINLANG['fraud']['title'] = "Proteção Anti Fraude";
@@ -2994,6 +3030,10 @@ $_ADMINLANG['general']['preventEmailReopeningTicket'] = "Impedir reabertura de e
 $_ADMINLANG['general']['preventEmailReopeningTicketDescription'] = "Marque para impedir que as respostas por e-mail reabrem os bilhetes fechados e para enviar um e-mail aconselhando a abrir um novo ticket ou atualizar o ticket existente para os clientes.";
 $_ADMINLANG['general']['storeClientDataSnapshot'] = "Gravar Instantâneo dos Dados do Cliente";
 $_ADMINLANG['general']['storeClientDataSnapshotInfo'] = "Preserve detalhes do cliente na geração de nota fiscal para evitar alterações de perfil para faturas existentes.";
+$_ADMINLANG['general']['creditApply'] = "Uso de Crédito Automático";
+$_ADMINLANG['general']['creditApplyAutomatic'] = "Marque para aplicar automaticamente o crédito disponível de um saldo de crédito dos usuários às faturas recorrentes após a criação";
+$_ADMINLANG['general']['phoneNumberDropdown'] = "Números de telefone";
+$_ADMINLANG['general']['phoneNumberDropdownText'] = "Marque para ativar a interface de entrada de número de telefone internacional e formatação automática";
 
 # Config Tax
 $_ADMINLANG['taxconfig']['taxrulestitle'] = "Regras Fiscais";
@@ -3650,6 +3690,7 @@ $_ADMINLANG['healthCheck']['updaterTempWriteable'] = "As atualizações automát
 $_ADMINLANG['healthCheck']['updaterGeneralMemoryLimit'] = "As atualizações automáticas requerem pelo menos :memoryLimitRequired de memória disponível alocada para o processo PHP. Sua configuração atual de memory_limit do PHP é menor do que isso. Para atualizar, por favor, aumente o memory_limit dentro de sua configuração PHP para :memoryLimitRequired ou mais.";
 $_ADMINLANG['healthCheck']['updaterVersionMemoryLimit'] = "Atualização automática para versão :updateVersion requer ao menos :memoryLimitRequired de memória disponível alocada ao processo PHP. Seu memory_limit atual do PHP é menor que esta. Para atualizar, aumente o memory_limit na configuração do PHP para :memoryLimitRequired ou mais alto.";
 $_ADMINLANG['healthCheck']['updaterSuccess'] = "Seu ambiente parece atender aos requisitos mínimos para atualizações automáticas. Para atualizar, você precisará garantir que você tenha pelo menos 250 MB de espaço disponível em disco.";
+$_ADMINLANG['healthCheck']['updaterIoncubeLoaderMismatch'] = "Seu sistema possui o ionCube Loader :loaderVersionInstalled. Por favor, instale o ionCube Loader :loaderVersionRequired ou superior para atualizar a versão do WHMCS :updateVersion. <a href=\"https://docs.whmcs.com/System_Environment_Guide#IonCube_Version\">Saber mais</a>";
 
 $_ADMINLANG['appLinks']['description'] = "Links de Aplicativos permitem que você forneça acesso à contas de usuários no WHMCS à partir de aplicativos de terceiro.";
 $_ADMINLANG['appLinks']['description2'] = "Todos os aplicativos que suportam Links de Aplicativos estão listados abaixo e podem ser ativados/desativados simplesmente mudando as opções abaixo. Ao ativar um link de aplicativo para um determinado aplicativo será iniciado um processo em segundo plano para criar os links de aplicativos iniciais. Por favor, aguarde até 30 minutos para que isso tenha efeito para todos os produtos/serviços.";
@@ -3858,6 +3899,7 @@ $_ADMINLANG['apicredentials']['reveal'] = "Revelar";
 $_ADMINLANG['apicredentials']['generate'] = "Gerar";
 $_ADMINLANG['apicredentials']['delete'] = "Excluir credenciais";
 $_ADMINLANG['apicredentials']['deletePrompt'] = "Deseja excluir essas credenciais?<br><br> Esta ação não pode ser revertida.";
+$_ADMINLANG['apicredentials']['noCredentials'] = "Sem Credenciais de API";
 
 $_ADMINLANG['uriPathMgmt']['labelFriendlyUrls'] = "URLs amigáveis";
 $_ADMINLANG['uriPathMgmt']['btnModeRewrite'] = "Reescrita completa amigável";
@@ -3904,3 +3946,101 @@ $_ADMINLANG['errorPage']['405']['description'] = "";
 $_ADMINLANG['errorPage']['500']['title'] = "Erro Interno";
 $_ADMINLANG['errorPage']['500']['subtitle'] = "Um erro inesperado ocorreu.";
 $_ADMINLANG['errorPage']['500']['description'] = "Se o problema persistir, entre em contato com o suporte.";
+
+$_ADMINLANG['notifications']['title'] = "Notificações";
+$_ADMINLANG['notifications']['rules'] = "Regras de notificação";
+$_ADMINLANG['notifications']['createNewRule'] = "Criar nova regra de notificação";
+$_ADMINLANG['notifications']['editRule'] = "Editar Regra de Notificação";
+$_ADMINLANG['notifications']['duplicateRule'] = "Regra existente duplicada";
+$_ADMINLANG['notifications']['create'] = "Criar";
+$_ADMINLANG['notifications']['notificationMethod'] = "Método de notificação";
+$_ADMINLANG['notifications']['ruleName'] = "Nome da regra";
+$_ADMINLANG['notifications']['event'] = "Evento";
+$_ADMINLANG['notifications']['eventDescription'] = "Escolha um evento. Você pode selecionar vários eventos dentro de qualquer categoria de evento.";
+$_ADMINLANG['notifications']['conditionsDescription'] = "As seguintes condições podem ser aplicadas para restringir quando esta regra é executada.";
+$_ADMINLANG['notifications']['settings'] = "Configurações de notificação";
+$_ADMINLANG['notifications']['settingsUpdatedConfirmation'] = "Configurações atualizadas com sucesso!";
+$_ADMINLANG['notifications']['ruleCreatedSuccessfully'] = "Regra de notificação criada com sucesso!";
+$_ADMINLANG['notifications']['ruleUpdatedSuccessfully'] = "Regra de notificação atualizada com sucesso!";
+$_ADMINLANG['notifications']['deleteAreYouSure'] = "Tem certeza de que deseja excluir esta regra de notificação?";
+$_ADMINLANG['notifications']['deleteConfirmation'] = "Regra de notificação excluída com sucesso!";
+$_ADMINLANG['notifications']['noRulesSetup'] = "Nenhuma configuração de regras de notificação";
+$_ADMINLANG['notifications']['validationNameRequired'] = "É necessário um nome/descrição da regra.";
+$_ADMINLANG['notifications']['validationEventTypeRequired'] = "Escolha um tipo de evento.";
+$_ADMINLANG['notifications']['validationEventRequired'] = "Escolha um evento.";
+$_ADMINLANG['notifications']['validationProviderRequired'] = "Escolha um fornecedor de notificações.";
+$_ADMINLANG['notifications']['validationProviderFieldRequired'] = "O campo de configuração de notificação a seguir é necessário:";
+$_ADMINLANG['notifications']['providerDisabledConfirmation'] = "Provedor de Notificação Desativado";
+
+$_ADMINLANG['notifications']['ticket']['opened'] = "Um novo ticket de suporte foi aberto.";
+$_ADMINLANG['notifications']['ticket']['reply_cust'] = "Uma nova resposta foi postada por um cliente.";
+$_ADMINLANG['notifications']['ticket']['reply_admin'] = "Uma nova resposta foi postada por um membro da equipe.";
+$_ADMINLANG['notifications']['ticket']['new_note'] = "Uma nova nota foi postada por um membro da equipe.";
+$_ADMINLANG['notifications']['ticket']['dept_change'] = "Este ticket de suporte foi transferido para um novo departamento.";
+$_ADMINLANG['notifications']['ticket']['priority_change'] = "Este ticket de suporte teve a prioridade alterada.";
+$_ADMINLANG['notifications']['ticket']['status_change'] = "Este ticket de suporte teve uma mudança de status.";
+$_ADMINLANG['notifications']['ticket']['assigned'] = "Este ticket de suporte foi atribuído a um membro da equipe.";
+$_ADMINLANG['notifications']['ticket']['closed'] = "Um ticket de suporte foi fechado.";
+$_ADMINLANG['notifications']['order']['created'] = "Uma nova ordem foi inserida.";
+$_ADMINLANG['notifications']['order']['paid'] = "Um pedido foi pago por.";
+$_ADMINLANG['notifications']['order']['accepted'] = "Uma nova ordem foi aceita.";
+$_ADMINLANG['notifications']['order']['cancelled'] = "Um pedido foi cancelado.";
+$_ADMINLANG['notifications']['order']['refunded'] = "Um pedido foi reembolsado.";
+$_ADMINLANG['notifications']['order']['modified'] = "Um pedido falhou na verificação de fraude.";
+$_ADMINLANG['notifications']['invoice']['created'] = "Uma nova fatura foi criada.";
+$_ADMINLANG['notifications']['invoice']['paid'] = "Uma fatura foi paga.";
+$_ADMINLANG['notifications']['invoice']['cancelled'] = "Uma fatura foi cancelada.";
+$_ADMINLANG['notifications']['invoice']['refunded'] = "Uma fatura foi reembolsada.";
+$_ADMINLANG['notifications']['invoice']['modified'] = "Uma fatura foi modificada.";
+$_ADMINLANG['notifications']['service']['provisionedTitle'] = "Serviço provisionado com sucesso";
+$_ADMINLANG['notifications']['service']['provisionedTitleError'] = "Provisionamento de serviços falhou";
+$_ADMINLANG['notifications']['service']['provisioned'] = "Um novo serviço foi provisionado.";
+$_ADMINLANG['notifications']['service']['provisionedError'] = "Um novo serviço não conseguiu provisionar com sucesso.";
+$_ADMINLANG['notifications']['service']['suspendedTitle'] = "Serviço suspenso com sucesso";
+$_ADMINLANG['notifications']['service']['suspendedTitleError'] = "Suspensão de serviço falhou";
+$_ADMINLANG['notifications']['service']['suspended'] = "Um serviço foi suspenso.";
+$_ADMINLANG['notifications']['service']['suspendedError'] = "Um serviço falhou ao suspender com sucesso.";
+$_ADMINLANG['notifications']['service']['unsuspendedTitle'] = "Serviço reativado com êxito";
+$_ADMINLANG['notifications']['service']['unsuspendedTitleError'] = "Reativação de serviço falhou";
+$_ADMINLANG['notifications']['service']['unsuspended'] = "Um serviço foi reativado.";
+$_ADMINLANG['notifications']['service']['unsuspendedError'] = "Um serviço não conseguiu reativar com êxito.";
+$_ADMINLANG['notifications']['service']['terminatedTitle'] = "Serviço terminado com sucesso";
+$_ADMINLANG['notifications']['service']['terminatedTitleError'] = "Falha no término do serviço";
+$_ADMINLANG['notifications']['service']['terminated'] = "Um serviço foi encerrado.";
+$_ADMINLANG['notifications']['service']['terminatedError'] = "Um serviço falhou ao encerrar com êxito.";
+$_ADMINLANG['notifications']['service']['cancellation_requestTitle'] = "Novo pedido de cancelamento enviado";
+$_ADMINLANG['notifications']['service']['cancellation_request'] = "Um novo pedido de cancelamento foi enviado.";
+$_ADMINLANG['notifications']['domain']['registrationTitle'] = "Registro de domínio com sucesso";
+$_ADMINLANG['notifications']['domain']['registrationTitleError'] = "Registro de domínio falhou";
+$_ADMINLANG['notifications']['domain']['registration'] = "Um novo domínio foi registrado com sucesso.";
+$_ADMINLANG['notifications']['domain']['registrationError'] = "Um novo registro de domínio foi realizado, porem, falhou.";
+$_ADMINLANG['notifications']['domain']['transfer_initiatedTitle'] = "Transferência de domínio iniciada";
+$_ADMINLANG['notifications']['domain']['transfer_initiated'] = "Foi iniciada uma nova transferência de domínio.";
+$_ADMINLANG['notifications']['domain']['transfer_completedTitle'] = "Transferência de domínio concluída";
+$_ADMINLANG['notifications']['domain']['transfer_completed'] = "A transferência de domínio foi concluída com sucesso.";
+$_ADMINLANG['notifications']['domain']['transfer_failedTitle'] = "Transferência de domínio falhou";
+$_ADMINLANG['notifications']['domain']['transfer_failed'] = "Uma transferência de domínio entrante falhou.";
+$_ADMINLANG['notifications']['domain']['renewalTitle'] = "Renovação do domínio com sucesso";
+$_ADMINLANG['notifications']['domain']['renewalTitleError'] = "Renovação do domínio falhou";
+$_ADMINLANG['notifications']['domain']['renewal'] = "O domínio foi renovado com sucesso.";
+$_ADMINLANG['notifications']['domain']['renewalError'] = "Uma renovação de domínio foi realizada, porem, falhou.";
+
+$_ADMINLANG['moduleQueue']['unknownError'] = "Ocorreu um erro desconhecido. Para diagnosticar ainda mais, habilite o log de depuração do módulo e tente novamente.";
+
+$_ADMINLANG['apicreds']['title'] = "Credenciais da API";
+$_ADMINLANG['apicreds']['introduction'] = "As credenciais da API permitem uma gestão mais eficaz e segura do acesso administrativo fornecido a aplicativos e dispositivos externos.";
+$_ADMINLANG['apicreds']['adminUser'] = "Usuário Admin";
+$_ADMINLANG['apicreds']['apiRoles'] = "Função(ões) da API";
+$_ADMINLANG['apicreds']['roleSelectionHelper'] = "Selecione a(s) Função(ões) da API ao qual este conjunto de credenciais está atribuído. Você pode selecionar mais de um usando Ctrl + Clique.";
+$_ADMINLANG['apicreds']['credSuccessSummary'] = "Abaixo está o identificador de acesso exclusivo e o segredo.";
+$_ADMINLANG['apicreds']['mustCopySecret'] = "Você deve copiar o segredo agora, pois não pode ser recuperado mais tarde.";
+$_ADMINLANG['apicreds']['identifier'] = "Identificador";
+$_ADMINLANG['apicreds']['secret'] = "Segredo";
+
+$_ADMINLANG['apirole']['title'] = "Funções da API";
+$_ADMINLANG['apirole']['create'] = "Criar funções de API";
+$_ADMINLANG['apirole']['allowedApiActions'] = "Ações da API Permitidas";
+$_ADMINLANG['apirole']['roleName'] = "Nome da função";
+$_ADMINLANG['apirole']['descriptionPlaceholder'] = "Breve descrição da função (Opcional)";
+$_ADMINLANG['apirole']['noRolesDefined'] = "Nenhuma função definida";
+$_ADMINLANG['apirole']['roleManagement'] = "Gerenciamento de funções";

@@ -2204,9 +2204,9 @@ $_LANG['ssl']['retrieveCertificate'] = "Recuperar Certificado";
 
 $_LANG['upgradeCredit'] = "Atualizar Crédito";
 $_LANG['upgradeCreditDescription'] = "Calculo baseado em :daysRemaining Dias não utilizados :totalDays Totais de dias no ciclo de faturamento atual.";
+
 $_LANG['orderForm']['domainExtensionTransferNotSupported'] = "Seu domínio não é suportado para transferência neste momento. Por favor tente outro domínio.";
-$_LANG['orderForm']['domainExtensionTransferPricingNotConfigured'] = "Seu domínio não é elegível para transferência neste momento. Por favor tente outro domínio.";
-$_LANG['orderForm']['domainExtensionTransferPricingNotConfigured'] = "Seu domínio não é elegível para transferência para nós. Por favor, tente outro domínio.";
+$_LANG['orderForm']['domainExtensionTransferPricingNotConfigured'] = "Seu domínio não é suportado para transferência para nós no momento. Por favor, tente outro domínio.";
 
 $_LANG['remoteAuthn']['success'] = "Sucesso!";
 $_LANG['remoteAuthn']['errorExclamation'] = "Erro!";
@@ -2236,6 +2236,9 @@ $_LANG['remoteAuthn']['name'] = "Nome";
 $_LANG['remoteAuthn']['emailAddress'] = "Endereço de e-mail";
 $_LANG['remoteAuthn']['actions'] = "Ações";
 $_LANG['remoteAuthn']['noLinkedAccounts'] = "Nenhuma conta vinculada encontrada";
+$_LANG['remoteAuthn']['signInWith'] = "Entrar com :provider";
+$_LANG['remoteAuthn']['connectWith'] = "Conectar com :provider";
+$_LANG['remoteAuthn']['signUpWith'] = "Inscreva-se com :provider";
 
 $_LANG['unlink'] = "Desvincular";
 
@@ -2255,4 +2258,11 @@ $_LANG['marketConnect']['weebly']['ftpPassword'] = "Senha do FTP";
 $_LANG['marketConnect']['weebly']['ftpPath'] = "Caminho do FTP";
 $_LANG['marketConnect']['weebly']['updateFtp'] = "Atualizar credenciais de FTP";
 $_LANG['marketConnect']['weebly']['manage'] = "Logar no Weebly";
+
+$_LANG['domainChecker']['contactSupport'] = "Entre em contato com a compra";
+
+$_LANG['cart']['availableCreditBalance'] = "Seu saldo de crédito disponível é :amount.";
+$_LANG['cart']['applyCreditAmount'] = "Aplicar <span>:amount</span> do meu saldo de crédito para este pedido e pagarei o montante remanescente através do método de pagamento selecionado abaixo.";
+$_LANG['cart']['applyCreditAmountNoFurtherPayment'] = "Aplicar <span>:amount</span> do meu saldo de crédito para este pedido. Nenhum pagamento adicional será devido.";
+$_LANG['cart']['applyCreditSkip'] = "Não aplique qualquer crédito do meu saldo de crédito para este pedido. Eu pagarei por isso usando o método de pagamento selecionado abaixo.";
 ////////// End of portuguese-br language file.  Do not place any translation strings below this line!
